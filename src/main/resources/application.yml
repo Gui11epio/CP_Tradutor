@@ -1,0 +1,35 @@
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  application:
+    name: tradutoria
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-4o-mini
+          temperature: 0.2
+          max-tokens: 500
+
+    retry:
+      max-attempts: 5
+      initial-interval: 5
+      max-interval: 60
+
+
+translator:
+  openai:
+    url: https://api.openai.com/v1/chat/completions
+    model: gpt-4o-mini

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tradutor PT → ES (ético)</title>
+</head>
+<body>
+<h1>Tradutor Português → Espanhol (ético)</h1>
+<form th:action="@{/translate}" th:object="${request}" method="post">
+    <div>
+        <label for="text">Texto em Português:</label><br/>
+        <textarea id="text" th:field="*{text}" rows="6" cols="80"></textarea>
+    </div>
+    <div>
+        <button type="submit">Traduzir</button>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado da Tradução</title>
+</head>
+<body>
+<h1>Resultado</h1>
+<div>
+    <h3>Original (PT)</h3>
+    <p th:text="${original}"></p>
+</div>
+<div>
+    <h3>Traduzido (ES)</h3>
+    <p th:text="${translated}"></p>
+</div>
+<div>
+    <h4>Observação</h4>
+    <p th:text="${note}"></p>
+</div>
+<p><a th:href="@{/}">Voltar</a></p>
+</body>
+</html>
