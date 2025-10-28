@@ -100,12 +100,13 @@ http://localhost:8080
 Olá! Eu gostaria de saber como está o clima hoje em Madrid.
 ```
 
-### 💡 Saída:
 ```
-¡Hola! Me gustaría saber cómo está el clima hoy en Madrid.
+Vida longa ao Imperador!
 ```
 
-
+```
+Estou com fome, vamos sair para comer?
+```
 
 ## ⚖️ Regras Éticas e Morais
 O tradutor segue um conjunto de princípios éticos:
